@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial, sans-serif;;
+}
+/*HEADER*/
+.block{
+    border-top:solid 50px rgba(19, 15, 1);
+    position: fixed;
+    height:30px;
+    width: 100%;
+    z-index:2;
+}
+header{
+    background-color: rgb(246, 69, 69);
+    width: 96%;
+    height: 10%;
+    top: 30px;
+    left: 2%;
+    border-radius: 50px;
+    position: fixed;
+    z-index:2;
+}
+header ul{
+    position: absolute;
+    right: 1vw;
+    top: 0;
+    line-height: 92px;
+    font-size: 20px;
+}
+header li {
+    display: inline;
+    margin: 15px;
+}
+header a {
+    text-decoration: none;
+    
+}
+header a:hover{
+    text-decoration: underline;
+}
+.logo{
+    position: absolute;
+    background-color: blue;
+    width:70px;
+    height:80px;
+    left:3%;
+    top:15px;
+}
+/*精選作品*/
+.showcase{
+    background-color: aqua;
+    height: 90vh;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*個人簡介*/
+.aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    font-size: 80px;
+    height: 80vh;
+}
+.pic{
+    background-color: plum;
+    position: absolute;
+    font-size: 50px;
+    width: 30vw;
+    height: 70vh;
+    top:700px;
+    right:150px;
+}
+
+/*精選作品(滑動頁)*/
+.portfolio{
+    background-color: rgb(189, 240, 169);
+    height: 80vh;
+}
+.port_a{
+    font-size: 80px;
+    padding: 50px;
+    text-align: center;
+}
+.port_d{
+    display: flex;
+    justify-content: space-around;
+}
+.create{
+    background-color: rgb(247, 233, 175);
+    width: 20%;
+    height: 40vh;
+    font-size: 80px;
+}
+.cta{
+    font-size: 40px;
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+    left:43vw;
+    border-radius: 50px;
+}
+/*版權*/
+.copyright{
+    background-color: rgb(169, 193, 240);
+    font-size: 20px;
+    height: 70px;
+    text-align: center;
+}
+.copyright_a{
+    position: relative;
+    top:40%;
+}
