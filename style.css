@@ -1,14 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@font-face {
+    font-family: "Century Gothic-Bold";
+    src: url(fonts/fonnts.com-Century_Gothic_Bold.ttf),
+    url(fonts/fonnts.com-Century_Gothic_Bold.woff);
+  }
 *{
     padding: 0;
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", "Century Gothic-Bold", sans-serif;
 }
 body{
-    background-color: #FFFFFF;
+    background: #F2F2F2;
+    height: 100%;
 }
+
 nav{
+    z-index: 2;
     width:100%;
     padding: 20px 0;
     position: fixed;
@@ -27,7 +35,7 @@ nav .menu{
     text-decoration: none;
     color: #424242;
     font-size: 35px;
-    font-weight: 600;
+    
 }
 .menu ul{
     display: inline-flex;
@@ -43,6 +51,7 @@ nav .menu{
     font-weight: 500;
     padding: 8px 15px;
     border-radius: 5px;
+    cursor: pointer;
     transition: all 0.3 ease;
 }
 .menu ul li a:hover{
@@ -50,8 +59,14 @@ nav .menu{
     color: #000;
 }
 .showcase{
-    background: url(image/IMG_9571.JPG) no-repeat;
-    height: 100vh;
-    width: 100%;
+    background: #81D4FA;
+    height: 80vh;
+    width: 90%;
     background-size: cover;
+    border-radius: 20px;
+    border: 5px solid #81D4FA;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 110px;
+    left: 5vw;
 }
