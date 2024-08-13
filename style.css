@@ -8,56 +8,51 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Noto Sans TC", "Century Gothic-Bold", sans-serif;
+    font-family: "Century Gothic-Bold", sans-serif;
 }
 body{
     background: #F2F2F2;
     height: 100%;
 }
-
-nav{
-    z-index: 2;
-    width:100%;
-    padding: 20px 0;
-    position: fixed;
+/*Navbar*/
+.navbar{
+    border: 5px solid red;
 }
-nav .menu{
-    max-width: 90%;
-    border-radius: 24px;
-    background-color: #B39DDB;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 20px;
+nav .container-fluid{
+    position: relative;
+    background-color: #8977D6;
+    width: 90%;
+    border-radius: 50px;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.6);
 }
-.menu .logo a{
-    text-decoration: none;
-    color: #424242;
-    font-size: 35px;
-    
+.navbar-brand{
+    position: absolute;
+    top: 0;
+    margin-left: 40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 0 0 70px 70px;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.6);
+    background-color: #FFFFFF;
 }
-.menu ul{
-    display: inline-flex;
+.navbar-brand img{
+    object-fit: cover;
 }
-.menu ul li{
-    list-style: none;
-    margin-left: 25px;
+.navbar-nav li{    
+    margin-right: 1vw;
 }
-.menu ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 5px;
+.navbar-nav a{
+    color: #FFFFFF;
+    font-size: large;
+    border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3 ease;
+    transition: all 0.5 ease;
 }
-.menu ul li a:hover{
-    background: #fff;
-    color: #000;
+.navbar-nav a:hover{
+    background: #FFFFFF;
+    color: #8977D6;
 }
+
 .showcase{
     background: #81D4FA;
     height: 80vh;
@@ -70,3 +65,4 @@ nav .menu{
     top: 110px;
     left: 5vw;
 }
+
