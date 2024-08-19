@@ -16,11 +16,12 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-md w-100 fixed-top">
-        <div class="container-fluid p-4">
+      <nav class="navbar navbar-expand-lg w-100 fixed-top">
+        <div class="container-fluid p-4 mt-lg-3">
           <a class="navbar-brand" href="#">
             <img src="" alt="KYWEB" width="" height="" class="" />
           </a>
+          <!--漢堡選單-->
           <button
             class="navbar-toggler"
             type="button"
@@ -32,19 +33,22 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">HOME</a>
+                <a class="nav-link px-4 py-0" aria-current="page" href="#"
+                  >HOME</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT ME</a>
+                <a class="nav-link px-4 py-0" href="#">ABOUT ME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PORTFOLIO</a>
+                <a class="nav-link px-4 py-0" href="#">PORTFOLIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">OTHER</a>
+                <a class="nav-link px-4 py-0" href="#">OTHER</a>
               </li>
             </ul>
           </div>
@@ -55,13 +59,132 @@
     <main>
       <!--精選作品-->
       <section>
-        <div class="showcase">精選作品</div>
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-pause="false"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="0"
+              class="active button"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              class="button"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              class="button"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="3"
+              class="button"
+              aria-current="true"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              class="button"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="">
+              <img
+                src="image/HOME&ABOUT ME/精選作品輪播/精選作品輪播1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="">
+              <img
+                src="image/HOME&ABOUT ME/精選作品輪播/精選作品輪播2.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="">
+              <img
+                src="image/HOME&ABOUT ME/精選作品輪播/精選作品輪播3.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="">
+              <img
+                src="image/HOME&ABOUT ME/精選作品輪播/精選作品輪播4.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="">
+              <img
+                src="image/HOME&ABOUT ME/精選作品輪播/精選作品輪播5.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </section>
 
-      <sectiom class="aboutme">
-        <div>個人簡介</div>
-        <div class="pic">照片</div>
+      <!--個人簡介-->
+      <sectiom class="myself">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 left">
+              <h1>HELLO, I'M</h1>
+              <h3><span class="noto">張芸芸</span> Una Chang</h3>
+              <p>
+                My name is Una Chang, born in 2003 in New Taipei City, Taiwan, a
+                designer with a calm and composed demeanor. I have a special
+                fondness for quirky and cute little things and believe that good
+                design brings joy to people. Becoming a designer has been my
+                first and only career dream. Through my work, I hope to show
+                everyone the beauty of the world.
+              </p>
+            </div>
+            <div class="col right">
+              <img src="image/HOME&ABOUT ME/ABOUT ME/我的照片.png" />
+            </div>
+          </div>
+        </div>
       </sectiom>
+
       <section class="portfolio">
         <div class="port_a">PORTFOLIO</div>
         <div class="port_d">

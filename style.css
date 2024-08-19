@@ -7,43 +7,39 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-family: "Century Gothic-Bold", sans-serif;
 }
 body{
     background: #F2F2F2;
-    height: 100%;
+}
+.noto{
+    font-family: "Noto Sans TC";
 }
 /*Navbar*/
-.navbar{
-    border: 5px solid red;
-}
 nav .container-fluid{
     position: relative;
     background-color: #8977D6;
-    width: 90%;
-    border-radius: 50px;
+    width: 97%;
+    height: 70px;
+    border-radius: 500px;
     box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.6);
 }
 .navbar-brand{
     position: absolute;
     top: 0;
-    margin-left: 40px;
-    width: 150px;
-    height: 150px;
-    border-radius: 0 0 70px 70px;
+    margin-left: 150px;
+    width: 120px;
+    height: 120px;
+    border-radius: 0 0 500px 500px;
     box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.6);
     background-color: #FFFFFF;
 }
 .navbar-brand img{
     object-fit: cover;
 }
-.navbar-nav li{    
-    margin-right: 1vw;
-}
 .navbar-nav a{
     color: #FFFFFF;
-    font-size: large;
+    font-size: 25px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.5 ease;
@@ -53,16 +49,62 @@ nav .container-fluid{
     color: #8977D6;
 }
 
-.showcase{
-    background: #81D4FA;
-    height: 80vh;
-    width: 90%;
-    background-size: cover;
-    border-radius: 20px;
-    border: 5px solid #81D4FA;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    top: 110px;
-    left: 5vw;
+/*Carousel*/
+.carousel-indicators{
+    justify-content: start;
+    align-items: center;
+    margin-left: 0;
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+}
+.carousel-indicators .button{
+    box-sizing: border-box;
+    width: 4%;
+    height: 20%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+ 
+.carousel-item img {
+    max-height: 100%;
+    object-fit: cover;
 }
 
+/*個人簡介*/
+.myself .container-fluid{
+    padding-right: 0;
+    margin-top: 0px;
+    width: 95%;
+    border: 5px solid red;
+    padding: 50px 0px 30px 80px;
+}
+.myself .container-fluid .left{
+    border: blue 5px solid;
+    margin-left: 80px;
+    padding: 30px 0px 30px 0px;
+}
+.myself h1{
+    color: #8977D6;
+    font-size: 160px;
+    letter-spacing: 5px;
+}
+.myself h3{
+    font-size: 70px;
+    font-weight: 700;
+}
+.myself .right{
+    border: 5px solid green;
+}
+.myself img{
+    position: relative;
+    top: -260px;
+    left: 80px;
+    max-width: 80%;
+    border: 5px solid yellow;
+}
+.myself p{
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 2;
+}
